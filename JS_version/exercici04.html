@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 04</title>
+    <style>
+        body {
+            background-color: rgba(255, 0, 0, 0.719);
+            font: normal 12pt trebuchet;
+        }
+
+        header {
+            color: rgb(255, 216, 42);
+            text-align: center;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.356);
+            
+        }
+
+        section {
+            text-align: center;
+            background-color: rgb(255, 218, 51);
+            border-radius: 20px;
+            padding: 15px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.356);
+        }
+
+        input.btn {
+            margin: 3px;
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            font-style: italic;
+            padding: 15px;
+        }
+        table {
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Restaurant</h1></header>
+    <section>
+        <div>
+            <p>
+                <h3>Menu</h3>
+                <input type="button" class="btn" value="Consultar" onclick="consultar()"><br>
+                <input type="button" class="btn" value="Inserir" onclick="inserir()">
+                <input type="button" class="btn" value="Patró" onclick="patro()"><br>
+                <input type="button" class="btn" value="Buidar" onclick="buidar()">
+                <h3>Sol·licituds</h3>
+                <input type="button" class="btn" value="Registrar Client" onclick="registrar()"><br>
+                <input type="button" class="btn" value="Demanar" onclick="demanar()">
+                <input type="button" class="btn" value="Comande" onclick="comandes()"><br>
+                <input type="button" class="btn" value="Tancar" onclick="tancar()">
+                <input type="button" class="btn" value="Pagar" onclick="pagar()">
+            </p>
+        </div>
+        <div id="outputMENU"></div>
+        <div id="outputCLIENT"></div>
+        <div id="outputORDRE"></div>
+    </section>
+    <footer>BCN Activa - IT Academy</footer>
+    <script src="exercici04.js"></script>
+</body>
+</html>
